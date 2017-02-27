@@ -1,0 +1,38 @@
+{
+  "name": "coub-downloader",
+  "version": "0.0.1",
+  "description": "Service for download videos from coub.com",
+  "keywords": [
+    "coub.com",
+    "service",
+    "downloader",
+    "parser"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "start": "node --harmony-async-await index.js",
+    "watch": "./node_modules/.bin/nodemon --harmony-async-await index.js",
+    "test": "mocha --no-exit"
+  },
+  "dependencies": {
+    "body-parser": "~1.16.*",
+    "cheerio": "^0.22.0",
+    "express": "~4.14.*",
+    "lodash": "4.17.*",
+    "morgan": "~1.0.0",
+    "request": "~2.79.*",
+    "request-promise": "^4.1.1"
+  },
+  "devDependencies": {
+    "express-static": "^1.0.3",
+    "lodash": "^4.17.4",
+    "mocha": "*",
+    "nodemon": "^1.11.0",
+    "should": "*"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "author": "Bogdan <seclan@mail.ru> (http://bogdanonline.com/en)",
+  "license": "ISC"
+}
