@@ -26,7 +26,7 @@ app.use(bodyParser.json());
 // create our router
 let router = express.Router();
 
-app.use(static(__dirname + '/static'));
+app.use(static(__dirname + '/static/dist'));
 
 // REGISTER OUR ROUTES -------------------------------
 app.use('/api', api(router));
